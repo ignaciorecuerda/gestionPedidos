@@ -60,6 +60,8 @@ Seguidamente inicio el test al repositorio de la aplicación y lo realiza correc
 
 ![build passing](https://www.dropbox.com/s/9uekyx2jzmazoki/hitoAnterior.png?dl=1)
 
+![Pasa el test](https://www.dropbox.com/s/pr7jobwx3imj9p8/hitoAnterios2.png?dl=1)
+
 Añado el fichero makefile para así automatizar los test. Dicho fichero contiene lo siguiente:
 
 ![fichero makefile](https://www.dropbox.com/s/b3lw6xda2r4jtk6/hito2.5.png?dl=1)
@@ -67,10 +69,34 @@ Añado el fichero makefile para así automatizar los test. Dicho fichero contien
 
 
 #Tercer hito
-Para realizar
-[Gestión pedidos](https://gestionpedidos.herokuapp.com)
 
+Para realizar este hito he escogido el PaaS Heroku. Lo he escogido porque es muy sencillo de usar, ya que se puede enlazar directamente con un repositorio de gitHub y gestionar con unos comandos de terminal de una manera muy fácil. Heroku tiene varios planes para alojar aplicaciones, yo he escogido el plan gratuito ya que con este tengo las funciones que necesito para la práctica. Tiene las limitaciones de que no puede estar operativo más de ciertas horas seguidas, y si no recibe peticiones pasado 30 min la aplicación se "duerme" con el inconveniente de que para la siguiente petición tendrá un tiempo de respuesta mayor al que tendría si estuviese operativo.
 
+Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
-PARA EL TERCER HITO PONER TAMBIEN, APARTE DE LO DEL EJERCICIO 5 DEL TEMA 3 TODOS LOS COMANDOS QUE HE PUESTO PARA CONFIGURARLO, LOS QUE VIENE EN EL TUTORIAL ESTE:
-https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-add-ons
+* En primer lugar creo una aplicación en Heroku, esta aplicación la he llamado 
+"gestionpedidos".
+
+![Creando aplicacion en heroku](https://www.dropbox.com/s/fpm9tfrubpbq5ma/hito1.png?dl=1)
+
+* Una vez creada me voy a la página web de Heroku y verifico que se ha creado correctamente mi aplicación. Podemos comprobarlo en la siguiente captura de pantalla
+
+![verifico creacion app](https://www.dropbox.com/s/r1lrlm91vnhlqt0/hito3.png?dl=1)
+
+* En segundo lugar lo que hago es hacer un push de mi repositorio a heroku, para ello he usado el comando "git push heroku master", como se puede ver a continuación.
+
+![Creando aplicacion en heroku](https://www.dropbox.com/s/wtp8f1wnms8wu8z/hito2.png?dl=1)
+
+* Por último, abro la aplicación con el comando "Heroku open" desde terminal 
+
+![abro app desde terminal](https://www.dropbox.com/s/185sdui7iv9z3f1/hito4.png?dl=1)
+
+* o abriendola desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
+
+Aquí dejo una captura de la aplicación funcionando
+
+![aplicación funcionando](https://www.dropbox.com/s/dsy9stezfcbtxhx/hito5.png?dl=1)
+
+La aplicación hace uso de una base de datos que está ubicada en azure. Deja captura de dicha base de datos
+
+![BD azure](https://www.dropbox.com/s/92rs54ho4zmrv4b/6.png?dl=1)
