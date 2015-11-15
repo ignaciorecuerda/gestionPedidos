@@ -87,6 +87,8 @@ Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
 ![Creando aplicacion en heroku](https://www.dropbox.com/s/wtp8f1wnms8wu8z/hito2.png?dl=1)
 
+* Añado el archivo Procfile que contiene el comando "web: npm start" necesario para que Heroku sepa el comando para lanzar la aplicación.
+
 * Por último, abro la aplicación con el comando "Heroku open" desde terminal 
 
 ![abro app desde terminal](https://www.dropbox.com/s/185sdui7iv9z3f1/hito4.png?dl=1)
