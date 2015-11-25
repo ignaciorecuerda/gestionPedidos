@@ -12,7 +12,6 @@ Para crear mi aplicacion me he basado en este [tutorial](https://azure.microsoft
 * npm install documentdb --save
 
 
-#Primer hito
 ##Integrantes del proyecto
 Este repositorio es de **Jose Ignacio Recuerda Cambil**, aunque el grupo esta formado también por:
 - Antonio Miguel Pozo Cámara
@@ -29,7 +28,7 @@ En principio será necesario un servicio de base de datos de SQL para poder alma
 
 ##Este proyecto se ha inscrito en el certamen de proyectos libres de la UGR.
 
-#Segundo hito
+
 ##Sistema de test
 Como sistema de test he usado moncha, ya que lo conocia de haberlo usado para uno de los ejercicios del tema.
 Empiezo instalando moncha con el comando "sudo npm install -g mocha" .Creo un directorio con el nombre "test" y dentro de este el archivo que se encargará de comprobar que la aplicación carga correctamente.
@@ -68,14 +67,14 @@ Añado el fichero makefile para así automatizar los test. Dicho fichero contien
 
 
 
-#Tercer hito
+#Subiendo mi aplicación a el PaaS Heroku
 
-Para realizar este hito he escogido el PaaS Heroku. Lo he escogido porque es muy sencillo de usar, ya que se puede enlazar directamente con un repositorio de gitHub y gestionar con unos comandos de terminal de una manera muy fácil. Heroku tiene varios planes para alojar aplicaciones, yo he escogido el plan gratuito ya que con este tengo las funciones que necesito para la práctica. Tiene las limitaciones de que no puede estar operativo más de ciertas horas seguidas, y si no recibe peticiones pasado 30 min la aplicación se "duerme" con el inconveniente de que para la siguiente petición tendrá un tiempo de respuesta mayor al que tendría si estuviese operativo.
+Para realizar este hito he escogido el PaaS Heroku. Lo he escogido porque es muy sencillo de usar, ya que se puede enlazar directamente con un repositorio de gitHub y gestionar de una manera muy fácil con unos comandos de terminal. 
+Heroku tiene varios planes para alojar aplicaciones, yo he escogido el plan gratuito ya que con este tengo las funciones que necesito. Tiene las limitaciones de que no puede estar operativo más de ciertas horas seguidas, y si no recibe peticiones pasado 30 minutos la aplicación se "duerme" con el inconveniente de que para la siguiente petición tendrá un tiempo de respuesta mayor al que tendría si estuviese operativo.
 
 Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
-* En primer lugar creo una aplicación en Heroku, esta aplicación la he llamado 
-"gestionpedidos".
+* En primer lugar creo una aplicación en Heroku, esta aplicación la he llamado "gestionpedidos".
 
 ![Creando aplicacion en heroku](https://www.dropbox.com/s/fpm9tfrubpbq5ma/hito1.png?dl=1)
 
@@ -83,22 +82,25 @@ Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
 ![verifico creacion app](https://www.dropbox.com/s/r1lrlm91vnhlqt0/hito3.png?dl=1)
 
-* En segundo lugar lo que hago es hacer un push de mi repositorio a heroku, para ello he usado el comando "git push heroku master", como se puede ver a continuación.
+* Añado el archivo Procfile que contiene el comando "web: npm start" necesario para que Heroku sepa el comando para ejecutar la aplicación.
+
+* Ya solo falta hacer un push de mi repositorio a heroku para subirla y que se lance automaticamente, para ello he usado el comando "git push heroku master", como se puede ver a continuación.
 
 ![Creando aplicacion en heroku](https://www.dropbox.com/s/wtp8f1wnms8wu8z/hito2.png?dl=1)
 
-* Añado el archivo Procfile que contiene el comando "web: npm start" necesario para que Heroku sepa el comando para lanzar la aplicación.
+* Por último, me voy a la página de Heroku y dentro de la aplicación me voy al menú "Desploy" y selecciono "Enable Automatic Deploy" para que la aplicación se depliegue automaticamente al hacer push en el repositorio.
 
-* Por último, abro la aplicación con el comando "Heroku open" desde terminal 
+![Seleccionando despliegue automático](https://www.dropbox.com/s/196loe5m7so9l9b/hito6.png?dl=1)
 
-![abro app desde terminal](https://www.dropbox.com/s/185sdui7iv9z3f1/hito4.png?dl=1)
+He realizado un cambio en el repositorio para comprobar que se desplegaba automaticamente, y tras 2-3 minutos la aplicación estaba desplegada con el cambio que he realizado.
 
-* o abriendola desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
+
+* Abriéndola desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
 
 Aquí dejo una captura de la aplicación funcionando
 
 ![aplicación funcionando](https://www.dropbox.com/s/dsy9stezfcbtxhx/hito5.png?dl=1)
 
-La aplicación hace uso de una base de datos que está ubicada en azure. Deja captura de dicha base de datos
+La aplicación hace uso de una base de datos que está ubicada en azure. Dejo captura de dicha base de datos
 
 ![BD azure](https://www.dropbox.com/s/92rs54ho4zmrv4b/6.png?dl=1)
