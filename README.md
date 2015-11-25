@@ -78,7 +78,7 @@ Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
 ![Creando aplicacion en heroku](https://www.dropbox.com/s/wtp8f1wnms8wu8z/hito2.png?dl=1)
 
-* Por último, me voy a la página de Heroku y dentro de la aplicación me voy al menú "Desploy" y selecciono "Enable Automatic Deploy" para que la aplicación se depliegue automaticamente al hacer push en el repositorio.
+* Por último, me voy a la página de Heroku y dentro de la aplicación me voy al menú "Desploy" y selecciono "Enable Automatic Deploy" para que la aplicación se depliegue automaticamente al hacer push en el repositorio. También selecciono la casilla "Wait for CI to pass before deploy" para que pase los test antes de desplegarse (ya que tengo integración continua).
 
 ![Seleccionando despliegue automático](https://www.dropbox.com/s/196loe5m7so9l9b/hito6.png?dl=1)
 
