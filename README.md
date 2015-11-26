@@ -60,7 +60,8 @@ Añado el fichero makefile para así automatizar los test.
 #Subiendo mi aplicación a el PaaS Heroku
 
 Para realizar este hito he escogido el PaaS Heroku. Lo he escogido porque es muy sencillo de usar, ya que se puede enlazar directamente con un repositorio de gitHub y gestionar de una manera muy fácil con unos comandos de terminal. 
-Heroku tiene varios planes para alojar aplicaciones, yo he escogido el plan gratuito ya que con este tengo las funciones que necesito. Tiene las limitaciones de que no puede estar operativo más de ciertas horas seguidas, y si no recibe peticiones pasado 30 minutos la aplicación se "duerme" con el inconveniente de que para la siguiente petición tendrá un tiempo de respuesta mayor al que tendría si estuviese operativo.
+
+Heroku tiene varios planes para alojar aplicaciones, yo he escogido el plan gratuito ya que con este tengo las funciones que necesito. Tiene las limitaciones de no poder estar operativo más de ciertas horas seguidas, y si no recibe peticiones pasados 30 minutos la aplicación se "duerme", con el inconveniente de que para la siguiente petición tendrá un tiempo de respuesta mayor al que tendría si estuviese operativo.
 
 Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
@@ -91,6 +92,8 @@ Aquí dejo una captura de la aplicación funcionando
 
 ![aplicación funcionando](https://www.dropbox.com/s/dsy9stezfcbtxhx/hito5.png?dl=1)
 
-La aplicación hace uso de una base de datos que está ubicada en azure. Dejo captura de dicha base de datos
+La aplicación hace uso de una base de datos que está ubicada en Azure. Para usar esta base de datos he creado un archivo llamado config.js en el que con este archivo la aplicación puede interactuar con la base de datos. En este archivo le indico tanto el host en el que se encuentra, como el nombre y colección de la BD. Para ver este archivo puede hacerlo desde [aquí](https://github.com/ignaciorecuerda/gestionPedidos/blob/master/config.js)
+
+Dejo captura de la base de datos creada en azure
 
 ![BD azure](https://www.dropbox.com/s/92rs54ho4zmrv4b/6.png?dl=1)
