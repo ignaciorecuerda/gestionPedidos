@@ -88,9 +88,10 @@ He realizado un cambio en el repositorio para comprobar que se desplegaba autom�
 
 * Para usarla podemos hacerlo desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
 
-Aquí dejo una captura de la aplicación funcionando
 
 En makefile he añadido todo lo necesarios para poder hacer el despliegue automatizado de la aplicación en Heroku, solo tenemos que ejecutar dentro de la aplicación el comando "make heroku"
+
+Aquí dejo una captura de la aplicación funcionando
 
 ![aplicación funcionando](https://www.dropbox.com/s/dsy9stezfcbtxhx/hito5.png?dl=1)
 
