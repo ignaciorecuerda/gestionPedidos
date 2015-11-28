@@ -75,15 +75,15 @@ Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 
 * Añado el archivo Procfile que contiene el comando "web: npm start" necesario para que Heroku sepa el comando para ejecutar la aplicación.
 
-* Ya solo falta hacer un push de mi repositorio a heroku para subirla y que se lance automaticamente, para ello he usado el comando "git push heroku master", como se puede ver a continuación.
+* Ya solo falta hacer un push de mi repositorio a heroku para subirla y que se lance automáticamente, para ello he usado el comando "git push heroku master", como se puede ver a continuación.
 
 ![Creando aplicacion en heroku](https://www.dropbox.com/s/wtp8f1wnms8wu8z/hito2.png?dl=1)
 
-* Por último, me voy a la página de Heroku y dentro de la aplicación me voy al menú "Desploy" y selecciono "Enable Automatic Deploy" para que la aplicación se depliegue automaticamente al hacer push en el repositorio. También selecciono la casilla "Wait for CI to pass before deploy" para que pase los test antes de desplegarse (ya que tengo integración continua).
+* Por último, me voy a la página de Heroku y dentro de la aplicación me voy al menú "Desploy" y selecciono "Enable Automatic Deploy" para que la aplicación se depliegue automáticamente al hacer push en el repositorio. También selecciono la casilla "Wait for CI to pass before deploy" para que pase los test antes de desplegarse (ya que tengo integración continua).
 
 ![Seleccionando despliegue automático](https://www.dropbox.com/s/196loe5m7so9l9b/hito6.png?dl=1)
 
-He realizado un cambio en el repositorio para comprobar que se desplegaba automaticamente, y tras 2-3 minutos la aplicación estaba desplegada con el cambio que he realizado.
+He realizado un cambio en el repositorio para comprobar que se desplegaba automáticamente, y tras 2-3 minutos la aplicación estaba desplegada con el cambio que he realizado.
 
 
 * Abriéndola desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
