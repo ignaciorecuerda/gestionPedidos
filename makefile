@@ -16,3 +16,6 @@ heroku:
 	git push heroku master
 	heroku ps:escale web=1
 	heroku open
+
+run:
+	npm start
