@@ -86,9 +86,11 @@ Los pasos que he seguido para tener la aplicación en Heroku son los siguientes:
 He realizado un cambio en el repositorio para comprobar que se desplegaba automáticamente, y tras 2-3 minutos la aplicación estaba desplegada con el cambio que he realizado.
 
 
-* Abriéndola desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
+* Para usarla podemos hacerlo desde nuestro navegador con este enlace [Gestión pedidos](https://gestionpedidos.herokuapp.com)
 
 Aquí dejo una captura de la aplicación funcionando
+
+En makefile he añadido todo lo necesarios para poder hacer el despliegue automatizado de la aplicación en Heroku, solo tenemos que ejecutar dentro de la aplicación el comando "make heroku"
 
 ![aplicación funcionando](https://www.dropbox.com/s/dsy9stezfcbtxhx/hito5.png?dl=1)
 
