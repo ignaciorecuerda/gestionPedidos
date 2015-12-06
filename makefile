@@ -4,6 +4,8 @@ test:
 	mocha test/test.js
 
 install:
+	sudo apt-get update
+	sudo apt-get install npm
 	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
@@ -19,3 +21,6 @@ heroku:
 
 run:
 	npm start
+
+docker:
+	sudo apt-get install -y docker.io
