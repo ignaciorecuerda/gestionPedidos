@@ -5,10 +5,10 @@ test:
 
 install:
 	sudo apt-get update
-	sudo apt-get install curl
+	sudo apt-get install -y curl
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
-	sudo apt-get install nodejs
-	sudo apt-get install npm
+	sudo apt-get install -y nodejs
+	sudo apt-get install -y npm
 	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
