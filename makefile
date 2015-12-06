@@ -11,7 +11,7 @@ install:
 	sudo npm install async --save
 	sudo npm install documentdb --save
 
-install_docker:
+installDocker:
 	sudo apt-get update
 	sudo apt-get install curl
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
