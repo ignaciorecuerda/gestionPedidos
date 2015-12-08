@@ -36,3 +36,5 @@ docker:
 	sudo apt-get install -y docker.io
 	sudo docker pull ignaciorecuerda2/gestionpedidos
 	sudo docker run -t -i ignaciorecuerda2/gestionpedidos  /bin/bash
+	cd gestionpedidos
+	make run
