@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
 #Autor
 MAINTAINER Jose Ignacio Recuerda Cambil <ignacio.recuerda@gmail.com>
@@ -11,4 +11,5 @@ RUN sudo apt-get install -y git
 RUN sudo apt-get install -y build-essential
 RUN sudo  git clone https://github.com/ignaciorecuerda/gestionPedidos.git
 RUN cd gestionPedidos && git pull
+RUN cd gestionPedidos cat makefile
 RUN cd gestionPedidos && make installnvm
