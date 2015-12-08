@@ -10,7 +10,8 @@ install:
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	sudo apt-get install -y nodejs
 	sudo apt-get install -y node
-	sudo npm install
+	sudo npm install -g grunt-cli
+	sudo npm install -g npm-install-missing
 	sudo npm install async --save
 	sudo npm install documentdb --save
 
