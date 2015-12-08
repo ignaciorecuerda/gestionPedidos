@@ -5,13 +5,11 @@ test:
 
 install:
 	sudo apt-get update
-	sudo apt-get install -y curl
-	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+	sudo apt-get install curl
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
-	sudo apt-get install -y nodejs
-	sudo apt-get install -y node
-	sudo npm install -g grunt-cli
-	sudo npm install -g npm-install-missing
+	sudo apt-get install nodejs
+	sudo apt-get install npm
+	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
 
