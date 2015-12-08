@@ -10,6 +10,7 @@ install:
 	sudo apt-get install -y nodejs
 	sudo apt-get install -y nodejs-legacy
 	sudo apt-get install -y npm
+	sudo npm cache clean
 	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
