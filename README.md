@@ -103,25 +103,30 @@ Dejo captura de la base de datos creada en azure
 
 
 #Creando entorno de pruebas
-Como entorno de pruebas voy a usar docker. Este nos permite crear un contenedor para poder probar mi aplicación haciendo un despliegue automático de esta antes de desplegarlo en producción.
 
-La imagen de la aplicación en Docker está en este [enlace](https://hub.docker.com/r/ignaciorecuerda2/gestionpedidos/)
+Como entorno de pruebas voy a usar Docker. 
 
-[Más detalle](PONER ENLACE A DOCUMENTACION/documentacionDocker.md)
+Docker es una plataforma que se encarga de automatizar el despliegue de aplicaciones en contenedores de software similares a donde se ejecutará, dando así la opción de probar la aplicación antes de que pase a producción.
+
+La imagen de mi aplicación en Docker está en este [enlace](https://hub.docker.com/r/ignaciorecuerda2/gestionpedidos/)
 
 Para crear el entrono de pruebas basta con ejecutar el comando `make docker`
 
-Este comando nos instalará docker, nos bajará la imagen creada en Docker Hub y la ejecutará.
+Este comando nos:
 
 * Instala docker
-* Nos descarga la imagen de de Docker Hub
-* Nos ejecuta la imagen descargada
+* Descarga la imagen de de Docker Hub
+* Ejecuta la imagen descargada
 
 Una vez dentro de la imagen solo habrá que:
 
-* Ejecutar `ifconfig` para saber la ip 
+* Ejecutar `ifconfig` para saber la ip de este contenedor
 * `cd gestionPedidos`
 * Ejecutar `make run`
 
-Tendremos que fijarnos en la ip del contenedor para poder introducirla en nuestro navegador y comprobar que la aplicación se está ejecuntando correctamente
+Solo habra que abrir nuestro navegador, introducir <ip del contenedor>:3000 y tendremos aplicación ejecutandose.
+
+[Más detalle](https://github.com/ignaciorecuerda/gestionPedidos/blob/master/documentacion/documentacionDocker.md)
+
+
 
