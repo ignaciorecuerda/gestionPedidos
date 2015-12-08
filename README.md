@@ -110,7 +110,7 @@ Docker es una plataforma que se encarga de automatizar el despliegue de aplicaci
 
 La imagen de mi aplicación en Docker está en este [enlace](https://hub.docker.com/r/ignaciorecuerda2/gestionpedidos/)
 
-Para crear el entrono de pruebas basta con ejecutar el comando `make docker`
+Para crear el entrono de pruebas basta con ejecutar el comando: `make docker`
 
 Este comando nos:
 
@@ -124,7 +124,7 @@ Una vez dentro de la imagen solo habrá que:
 * `cd gestionPedidos`
 * Ejecutar `make run`
 
-Solo habra que abrir nuestro navegador, introducir <ip del contenedor>:3000 y tendremos aplicación ejecutandose.
+Solo habrá que abrir nuestro navegador, introducir <ip del contenedor>:3000 y tendremos aplicación ejecutandose.
 
 [Más detalle](https://github.com/ignaciorecuerda/gestionPedidos/blob/master/documentacion/documentacionDocker.md)
 
