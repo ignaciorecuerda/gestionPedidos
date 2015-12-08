@@ -8,8 +8,7 @@ install:
 	sudo apt-get install -y curl
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	sudo apt-get install -y nodejs
-	sudo apt-get clean
-	sudo apt-get -f install
+	sudo apt-get install -y nodejs-legacy
 	sudo apt-get install -y npm
 	sudo npm install
 	sudo npm install async --save
