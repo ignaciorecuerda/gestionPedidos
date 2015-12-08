@@ -6,10 +6,11 @@ test:
 install:
 	sudo apt-get update
 	sudo apt-get install -y curl
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+	nvm use v4.2.1
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	sudo apt-get install -y nodejs
 	sudo apt-get install -y node
-	sudo safgsdfg
 	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
