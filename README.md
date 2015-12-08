@@ -114,7 +114,7 @@ Para crear el entrono de pruebas basta con ejecutar los siguientes comandos:
 
 * `make docker`
 * `cd gestionPedidos`
-* Ejecutar `make run`
+* `make run`
 
 [Más detalle](https://github.com/ignaciorecuerda/gestionPedidos/blob/master/documentacion/documentacionDocker.md)
 
