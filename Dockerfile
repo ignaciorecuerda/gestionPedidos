@@ -11,5 +11,4 @@ RUN sudo apt-get install -y git
 RUN sudo apt-get install -y build-essential
 RUN sudo  git clone https://github.com/ignaciorecuerda/gestionPedidos.git
 RUN cd gestionPedidos && git pull
-RUN cd gestionPedidos cat makefile
-RUN cd gestionPedidos && make installnvm
+RUN cd gestionPedidos && make install
