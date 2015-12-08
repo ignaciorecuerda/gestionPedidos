@@ -11,7 +11,6 @@ install:
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	sudo apt-get install -y nodejs
 	sudo apt-get install -y node
-	sadfasd
 	sudo npm install
 	sudo npm install async --save
 	sudo npm install documentdb --save
