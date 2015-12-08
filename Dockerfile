@@ -10,5 +10,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y git
 RUN sudo apt-get install -y build-essential
 RUN sudo  git clone https://github.com/ignaciorecuerda/gestionPedidos.git
+RUN cd gestionPedidos && sudo apt-get install -y nodejs
+RUN cd gestionPedidos && sudo apt-get install -y npm
 RUN cd gestionPedidos && git pull
 RUN cd gestionPedidos && make install
