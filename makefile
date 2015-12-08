@@ -5,7 +5,7 @@ test:
 
 install:
 	sudo apt-get update
-	sudo apt-get install curl
+	sudo apt-get install -y curl
 	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	sudo apt-get install nodejs
 	sudo apt-get install npm
@@ -42,4 +42,7 @@ run:
 	npm start
 
 docker:
+	sudo apt-get update
 	sudo apt-get install -y docker.io
+	sudo docker pull ignaciorecuerda2/gestionpedidos
+	sudo docker run -t -i ignaciorecuerda2/gestionpedidos  /bin/bash
