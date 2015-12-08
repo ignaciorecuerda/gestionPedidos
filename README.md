@@ -124,7 +124,7 @@ Una vez dentro de la imagen solo habrá que:
 * `cd gestionPedidos`
 * Ejecutar `make run`
 
-Solo habrá que abrir nuestro navegador, introducir <ip del contenedor>:3000 y tendremos aplicación ejecutandose.
+Solo hay que abrir nuestro navegador, introducir <ip del contenedor>:3000 y tendremos la aplicación ejecutandose.
 
 [Más detalle](https://github.com/ignaciorecuerda/gestionPedidos/blob/master/documentacion/documentacionDocker.md)
 
