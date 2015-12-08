@@ -100,3 +100,28 @@ La aplicación hace uso de una base de datos que está ubicada en Azure. Para us
 Dejo captura de la base de datos creada en azure
 
 ![BD azure](https://www.dropbox.com/s/92rs54ho4zmrv4b/6.png?dl=1)
+
+
+#Creando entorno de pruebas
+Como entorno de pruebas voy a usar docker. Este nos permite crear un contenedor para poder probar mi aplicación haciendo un despliegue automático de esta antes de desplegarlo en producción.
+
+La imagen de la aplicación en Docker está en este [enlace](https://hub.docker.com/r/ignaciorecuerda2/gestionpedidos/)
+
+[Más detalle](PONER ENLACE A DOCUMENTACION/documentacionDocker.md)
+
+Para crear el entrono de pruebas basta con ejecutar el comando `make docker`
+
+Este comando nos instalará docker, nos bajará la imagen creada en Docker Hub y la ejecutará.
+
+* Instala docker
+* Nos descarga la imagen de de Docker Hub
+* Nos ejecuta la imagen descargada
+
+Una vez dentro de la imagen solo habrá que:
+
+* Ejecutar `ifconfig` para saber la ip 
+* `cd gestionPedidos`
+* Ejecutar `make run`
+
+Tendremos que fijarnos en la ip del contenedor para poder introducirla en nuestro navegador y comprobar que la aplicación se está ejecuntando correctamente
+
